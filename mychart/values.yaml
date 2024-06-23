@@ -2,3 +2,9 @@ favorite:
   drink: coffee
   food: pizza
   hostname: www.google.com
+pizza:
+  toppings:
+    - mushroooms
+    - cheese
+    - peppers
+    - pineapple
