@@ -6,7 +6,7 @@ data:
   myvalue: "Hello World"
   {{- with .Values.favorite }}
   drink: {{ .drink | default "beer" | repeat 3 }}
-  food: {{ quote .food | upper }}
+  food: {{ quote $.Values.favorite.food | upper }}
   ip: {{ getHostByName .hostname }}
   {{- end }}
   {{- if eq .Values.favorite.drink "coffee" }}
